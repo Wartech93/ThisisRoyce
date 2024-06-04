@@ -1,29 +1,40 @@
-// We declare an object called styles that will contain a few objects for card and heading styles
-// Notice that each key lists CSS styles in camel case
-const styles = {
-  card: {
-    margin: 20,
-    background: '#e8eaf6',
-  },
-  heading: {
-    background: '#9a74db',
-    minHeight: 50,
-    lineHeight: 3.5,
-    fontSize: '1.2rem',
-    color: 'white',
-    padding: '0 20px',
-  },
-};
-
-// In Navbar, we can assign a style from an object by using curly braces
-function Navbar() {
+import { useLocation } from 'react-router-dom';
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+import 'animate.css/animate.min.css'
+import { useState, useEffect} from 'react';
+function Navbars() {
+  const [animate, setAnimate] = useState(false);
+  useEffect(() => {
+    // Trigger the animation when the component mounts
+    setAnimate(true);
+  }, []);
+  const currentPage = useLocation().pathname;
   return (
-    <div style={styles.card}>
-      <div style={styles.heading}>About Me</div>
-      <div style={styles.heading}>Contact</div>
-      <div style={styles.heading}>Resume</div>
-    </div>
+    <Navbar  fixed="top" expand="lg" bg="primary" className="justify-content-center">
+      <Container>
+        <Navbar.Brand className=
+        {animate && currentPage === '/Home' ? 'animate__animated animate__fadeIn' : ''} 
+        href="/Home">Royce Atkins</Navbar.Brand>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="basic-navbar-nav">
+          <Nav className="me-auto">
+            <Nav.Link href="/Home"
+              className={currentPage === '/Home' ? 'nav-link active' : 'nav-link'}>Home</Nav.Link>
+            <Nav.Link href="/About"
+              className={currentPage === '/About' ? 'nav-link active' : 'nav-link'}>About</Nav.Link>
+            <Nav.Link href="/Contact"
+              className={currentPage === '/Contact' ? 'nav-link active' : 'nav-link'}>Contact</Nav.Link>
+            <Nav.Link href="/Portfolio"
+              className={currentPage === '/Portfolio' ? 'nav-link active' : 'nav-link'}>Portfolio</Nav.Link>
+            <Nav.Link href="/Resume"
+              className={currentPage === '/Resume' ? 'nav-link active' : 'nav-link'}>Resume</Nav.Link>
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
   );
 }
 
-export default Navbar;
+export default Navbars;
