@@ -2,7 +2,7 @@ import { useLocation } from 'react-router-dom';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import 'animate.css/animate.min.css'
+import 'animate.css/animate.min.css';
 import { useState, useEffect} from 'react';
 function Navbars() {
   const [animate, setAnimate] = useState(false);

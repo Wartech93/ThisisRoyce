@@ -13,7 +13,7 @@ import ErrorPage from './pages/Error.jsx'
 import ResumePage from './pages/Resume.jsx'
 
 import App from './App.jsx'
-import './index.css'
+
 
 const router = createBrowserRouter([
  
