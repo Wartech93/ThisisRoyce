@@ -1,14 +1,14 @@
 import axios from 'axios';
 
-const getUsers = () => {
+const getProjects = () => {
   return axios.get('https://jsonplaceholder.typicode.com/users/');
 };
 
-const getSingleUser = (paramId) => {
+const getSingleProject = (paramId) => {
   return axios.get(`https://jsonplaceholder.typicode.com/users/${paramId}`);
 };
 
 export default {
-  getUsers,
-  getSingleUser,
+  getProjects,
+  getSingleProject,
 };

@@ -12,14 +12,14 @@ function Navbars() {
   }, []);
   const currentPage = useLocation().pathname;
   return (
-    <Navbar  fixed="top" expand="lg" bg="primary" className="justify-content-center">
-      <Container>
+  <Container>
+    <Navbar  fixed="top" expand="lg" bg="primary" >      
         <Navbar.Brand className=
         {animate && currentPage === '/Home' ? 'animate__animated animate__fadeIn' : ''} 
         href="/Home">Royce Atkins</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="me-auto">
+          <Nav className="ms-auto">
             <Nav.Link href="/Home"
               className={currentPage === '/Home' ? 'nav-link active' : 'nav-link'}>Home</Nav.Link>
             <Nav.Link href="/About"
@@ -32,8 +32,9 @@ function Navbars() {
               className={currentPage === '/Resume' ? 'nav-link active' : 'nav-link'}>Resume</Nav.Link>
           </Nav>
         </Navbar.Collapse>
-      </Container>
+      
     </Navbar>
+    </Container>
   );
 }
 

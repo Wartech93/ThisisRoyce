@@ -1,11 +1,10 @@
 import Col from 'react-bootstrap/Row';
 import Container from 'react-bootstrap/Container';
-import Image from 'react-bootstrap/Image';
 import Row from 'react-bootstrap/Row';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import 'animate.css/animate.min.css'
-
+import Project from '../components/Project'
 
 export default function Blog() {
   return (
@@ -14,22 +13,11 @@ export default function Blog() {
       <p className="bg-primary bg-opacity-50  text-center w-50 m-5">
         These are the projects I have worked on myself or collaborated on.
       </p>
-      <Container>
-        <Row>
-            <Col >
-              <Card className='animate__animated animate__zoomInLeft' style={{ width: '18rem' }}>
-                <Card.Img variant="top" src="src\mainPage.png" />
-                <Card.Body>
-                  <Card.Title>Summit Luxury Experiences</Card.Title>
-                  <Card.Text>
-                   A project for a mock luxury car rental business.
-                  </Card.Text>
-                  <a href='https://four04-project-2.onrender.com' target="_blank">
-                    <Button variant="primary">Visit</Button></a>
-                </Card.Body>
-              </Card>
-            </Col>
-          <Col >
+      
+        
+             <Project />
+           
+          {/* <Col >
           <Card className='animate__animated animate__zoomInLeft' style={{ width: '18rem' }}>
                 <Card.Img variant="top" src="src\DnDicon.png" />
                 <Card.Body>
@@ -37,19 +25,25 @@ export default function Blog() {
                   <Card.Text>
                    A tool for D&D players using a spellcasting class.
                   </Card.Text>
-                  <a href='https://four04-project-2.onrender.com' target="_blank">
+                  <a href='https://wartech93.github.io/404_Project/' target="_blank">
+                    <Button variant="primary">Visit</Button></a>
+                </Card.Body>
+              </Card>            
+          </Col>
+          <Col >
+          <Card className='animate__animated animate__zoomInLeft' style={{ width: '18rem' }}>
+                <Card.Img variant="top" src="src\Employeecalc.png" />
+                <Card.Body>
+                  <Card.Title>Employee Payroll</Card.Title>
+                  <Card.Text>
+                   A tool for businesses to keep track of Employees and their payrolls.
+                  </Card.Text>
+                  <a href='https://github.com/Wartech93/Royce_Employee_Payroll' target="_blank">
                     <Button variant="primary">Visit</Button></a>
                 </Card.Body>
               </Card>
-            <Image className="animate__animated animate__zoomInRight m5"
-              src="src\DnDicon.png" />
-          </Col>
-          <Col >
-            <Image className="animate__animated animate__zoomInUp"
-              src="src\Employeecalc.png" />
-          </Col>
-        </Row>
-      </Container>
+          </Col> */}
+ 
     </div>
 
   );
