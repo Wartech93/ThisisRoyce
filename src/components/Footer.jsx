@@ -7,12 +7,12 @@ export default function Footer() {
     return (  
       <div>
       
-      <Navbar fixed="bottom" expand="lg" bg="primary" >      
+      <Navbar fixed="bottom" expand="lg" bg="primary" className="text-center" >      
           <Navbar.Brand
           href="/Home"></Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />          
-            <Nav className="ms-auto">
-              <p>Royce Atkins, web developer.</p>
+            <Nav >
+              <p >©Soft Industry 2024</p>
               
               
            

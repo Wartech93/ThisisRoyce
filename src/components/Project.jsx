@@ -26,7 +26,6 @@ const employee = {
     image:'src/Employeecalc.png',
     link: 'https://wartech93.github.io/404_Project/',
     id: 2,
-
 }
 
 export default function Project() {
