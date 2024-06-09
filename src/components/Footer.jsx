@@ -7,7 +7,7 @@ export default function Footer() {
     return (  
       <div>
       
-      <Navbar fixed="bottom" expand="lg" bg="primary" className="text-center mt-5" >      
+      <Navbar fixed="bottom" expand="lg" style={{backgroundColor:"#0a630a"}} className="text-center mt-5" >      
           <Navbar.Brand
           href="/Home"></Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />          

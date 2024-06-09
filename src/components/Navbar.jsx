@@ -1,3 +1,4 @@
+
 import { useLocation } from 'react-router-dom';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
@@ -13,7 +14,7 @@ function Navbars() {
   const currentPage = useLocation().pathname;
   return (
   <Container>
-    <Navbar  fixed="top" expand="lg" bg="primary" >      
+    <Navbar  fixed="top" expand="lg" style={{backgroundColor:"#0a630a"}} >      
         <Navbar.Brand className=
         {animate && currentPage === '/Home' ? 'animate__animated animate__fadeIn' : ''} 
         href="/Home">Royce Atkins</Navbar.Brand>
@@ -31,8 +32,7 @@ function Navbars() {
             <Nav.Link href="/Resume"
               className={currentPage === '/Resume' ? 'nav-link active' : 'nav-link'}>Resume</Nav.Link>
           </Nav>
-        </Navbar.Collapse>
-      
+        </Navbar.Collapse>      
     </Navbar>
     </Container>
   );

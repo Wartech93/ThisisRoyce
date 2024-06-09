@@ -10,7 +10,7 @@ export default function Blog() {
   return (
     <div>
       <h1 className="bg-primary bg-opacity-50">Portfolio</h1>
-      <p className="bg-primary bg-opacity-50  text-center w-50 m-5">
+      <p className="bg-primary bg-opacity-50 text-center object-cover w-100 object-bottom mt-3">
         These are the projects I have worked on myself or collaborated on.
       </p>
        
