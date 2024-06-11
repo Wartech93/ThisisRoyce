@@ -2,7 +2,7 @@ import { Outlet } from 'react-router-dom';
 import Nav from './components/Navbar';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import React from 'react';
-import background from "/public/background.jpg";
+import background from "/background.jpg";
 import Footer from './components/Footer'
 
 

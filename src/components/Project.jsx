@@ -39,14 +39,14 @@ const readMe = {
 export default function Project() {
     return (
         <div>
-            <Container className="mb-5">
-                <Row>
-                    <Col>
+            <Container className="mb-5 d-flex align-items-md-center">
+                <Row >
+                    <Col className="justify-content-center">
                     <Card title={summit.title} description={summit.description} image={summit.image} link={summit.link} id={summit.id} />
                     <Card title={dAndD.title} description={dAndD.description} image={dAndD.image} link={dAndD.link} id={dAndD.id} />
                     <Card title={employee.title} description={employee.description} image={employee.image} link={employee.link} id={employee.id} />
                     </Col>
-                    <Col>
+                    <Col className="justify-content-center ">
                     <Card title={readMe.title} description={readMe.description} image={readMe.image} link={readMe.link} id={readMe.id} />
                     <Card title={dAndD.title} description={dAndD.description} image={dAndD.image} link={dAndD.link} id={dAndD.id} />
                     <Card title={employee.title} description={employee.description} image={employee.image} link={employee.link} id={employee.id}/>

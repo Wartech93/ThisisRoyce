@@ -9,8 +9,7 @@ export default function Footer() {
       
       <Navbar fixed="bottom" expand="lg" style={{backgroundColor:"#0a630a"}} className="text-center mt-5" >      
           <Navbar.Brand
-          href="/Home"></Navbar.Brand>
-          <Navbar.Toggle aria-controls="basic-navbar-nav" />          
+          href="/Home"></Navbar.Brand>         
             <Nav >
               <p >©Soft Industry 2024</p>   
             </Nav>
